@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+    }
+
+    form {
+        max-width: 500px;
+        height: 300px;
+        margin: auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 8px;
+    }    
+
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    input[type="radio"] {
+        margin-right: 5px;
+    }
+
+    input[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #45a049;
+    }
+</style>
+</head>
+<body class="conteiner">
+    <h1>Formulario de registro</h1>
+    <form action="/ejercicio3.html" method="post">
+        <label for="name">nombre:</label>
+        <input type="text" id="name" name="name">
+        
+        <label for="surname">apellido:</label>
+        <input type="text" id="surname" name="surname">
+        
+        <label> Modalidad de cursada:</label>
+        <input type="radio" id="online" name="modality" value="online">
+        <label for="online" style="display: inline;">online</label>
+        <input type="radio" id="differed" name="modality" value="differed">
+        <label for="differed" style="display:inline;">Diferido</label>
+        <input type="radio" id="live" name="modality" value="live">
+        <label for="live" style="display: inline;">En Vivo</label>
+
+        <input type="checkbox" name="more-info" id="more-info" value="yes">
+        <label for="more-info" style="display: inline;">deseo mas informacion</label> <br><br>
+
+        <input type="checkbox" id="consent" name="consent" value="yes">
+        <label for="consent" style="display:inline;">Acepto que los terminos y condiciones y estoy listo para convertirme en desarrollador full Stack</label> <br><br>
+
+        <input type="submit" value="enviar">
+
+    </form>
+    
+</body>
+</html>
